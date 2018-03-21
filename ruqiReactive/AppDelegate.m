@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RQLoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[RQTabBarController alloc] init];
+    self.window.rootViewController = [[RQLoginViewController alloc] init];
     [self.window makeKeyAndVisible];
     
     return YES;

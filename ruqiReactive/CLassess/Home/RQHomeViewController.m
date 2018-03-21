@@ -21,7 +21,9 @@
     [btn setBackgroundColor:[UIColor redColor]];
     [self.view addSubview:btn];
     [[btn rac_signalForControlEvents:(UIControlEventTouchUpInside)] subscribeNext:^(__kindof UIControl * _Nullable x) {
-        NSLog(@"监听到了");
+        UIViewController *vc = [UIViewController new];
+        vc.view.backgroundColor = [UIColor whiteColor];
+        [self.navigationController pushViewController:vc animated:YES];
     }];
     
 }
