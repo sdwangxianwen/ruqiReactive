@@ -10,4 +10,6 @@
 
 @interface RQLoginViewModel : RQBaseViewModel
 
+-(void)loginNetWorking;
+
 @end

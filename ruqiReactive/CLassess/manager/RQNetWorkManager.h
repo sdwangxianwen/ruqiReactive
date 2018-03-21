@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void(^successBlock)(id response);
+typedef void(^failureBlock)(id failureObject,NSString *resultCode);
+typedef void(^errorBlock)(NSError *error);
+
 @interface RQNetWorkManager : NSObject
 
 + (instancetype) shareInstance;
+
+-(void)loginNetWorkWith:(NSString *)urlstring parm:(NSDictionary *)parm successBlock:(successBlock)successBlock failureBlock:(failureBlock)failureBlock errorBlock:(errorBlock)errorBlock;
 
 @end

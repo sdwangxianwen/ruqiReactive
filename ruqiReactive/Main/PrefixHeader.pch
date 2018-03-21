@@ -9,6 +9,8 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#define SERVER_HOST_API @"https://api3.jcarea.com/"
+
 
 #import "RQNavController.h"
 #import "RQTabBarController.h"
