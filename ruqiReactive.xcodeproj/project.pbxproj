@@ -22,6 +22,10 @@
 		1E06D6BA2062B03100CA8E1F /* RQCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6B92062B03100CA8E1F /* RQCartViewController.m */; };
 		1E06D6BD2062B03B00CA8E1F /* RQMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6BC2062B03B00CA8E1F /* RQMeViewController.m */; };
 		1E06D6C02062B20600CA8E1F /* RQBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6BF2062B20600CA8E1F /* RQBaseViewModel.m */; };
+		1E06D6C92062BF9200CA8E1F /* RQLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6C82062BF9200CA8E1F /* RQLoginView.m */; };
+		1E06D6CC2062BFB100CA8E1F /* RQLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6CB2062BFB100CA8E1F /* RQLoginViewModel.m */; };
+		1E06D6CF2062BFC500CA8E1F /* RQLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6CE2062BFC500CA8E1F /* RQLoginModel.m */; };
+		1E06D6D32062C01500CA8E1F /* RQNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */; };
 		F02D8B9ED34BAF36A33152C8 /* libPods-ruqiReactive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +79,14 @@
 		1E06D6BC2062B03B00CA8E1F /* RQMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQMeViewController.m; sourceTree = "<group>"; };
 		1E06D6BE2062B20600CA8E1F /* RQBaseViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQBaseViewModel.h; sourceTree = "<group>"; };
 		1E06D6BF2062B20600CA8E1F /* RQBaseViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQBaseViewModel.m; sourceTree = "<group>"; };
+		1E06D6C72062BF9200CA8E1F /* RQLoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQLoginView.h; sourceTree = "<group>"; };
+		1E06D6C82062BF9200CA8E1F /* RQLoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQLoginView.m; sourceTree = "<group>"; };
+		1E06D6CA2062BFB100CA8E1F /* RQLoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQLoginViewModel.h; sourceTree = "<group>"; };
+		1E06D6CB2062BFB100CA8E1F /* RQLoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQLoginViewModel.m; sourceTree = "<group>"; };
+		1E06D6CD2062BFC500CA8E1F /* RQLoginModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQLoginModel.h; sourceTree = "<group>"; };
+		1E06D6CE2062BFC500CA8E1F /* RQLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQLoginModel.m; sourceTree = "<group>"; };
+		1E06D6D12062C01500CA8E1F /* RQNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQNetWorkManager.h; sourceTree = "<group>"; };
+		1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQNetWorkManager.m; sourceTree = "<group>"; };
 		1FE1E6E9A2EB356D82941108 /* Pods-ruqiReactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.debug.xcconfig"; sourceTree = "<group>"; };
 		399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ruqiReactive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		430C30C0C0EAC8789A1C9725 /* Pods-ruqiReactive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.release.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,8 +200,9 @@
 		1E06D6A82062AF9000CA8E1F /* login */ = {
 			isa = PBXGroup;
 			children = (
-				1E06D6A92062AFA600CA8E1F /* RQLoginViewController.h */,
-				1E06D6AA2062AFA600CA8E1F /* RQLoginViewController.m */,
+				1E06D6C32062BF5600CA8E1F /* ViewModel */,
+				1E06D6C22062BF5100CA8E1F /* model */,
+				1E06D6C12062BF3200CA8E1F /* Controller */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 		1E06D6AC2062AFB400CA8E1F /* CLassess */ = {
 			isa = PBXGroup;
 			children = (
+				1E06D6D02062BFF800CA8E1F /* manager */,
 				1E06D6B02062AFF300CA8E1F /* me */,
 				1E06D6AF2062AFDA00CA8E1F /* Cart */,
 				1E06D6AE2062AFCE00CA8E1F /* Find */,
@@ -240,6 +254,44 @@
 				1E06D6BC2062B03B00CA8E1F /* RQMeViewController.m */,
 			);
 			path = me;
+			sourceTree = "<group>";
+		};
+		1E06D6C12062BF3200CA8E1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6A92062AFA600CA8E1F /* RQLoginViewController.h */,
+				1E06D6AA2062AFA600CA8E1F /* RQLoginViewController.m */,
+				1E06D6C72062BF9200CA8E1F /* RQLoginView.h */,
+				1E06D6C82062BF9200CA8E1F /* RQLoginView.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E06D6C22062BF5100CA8E1F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6CD2062BFC500CA8E1F /* RQLoginModel.h */,
+				1E06D6CE2062BFC500CA8E1F /* RQLoginModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		1E06D6C32062BF5600CA8E1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6CA2062BFB100CA8E1F /* RQLoginViewModel.h */,
+				1E06D6CB2062BFB100CA8E1F /* RQLoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1E06D6D02062BFF800CA8E1F /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6D12062C01500CA8E1F /* RQNetWorkManager.h */,
+				1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */,
+			);
+			path = manager;
 			sourceTree = "<group>";
 		};
 		A0CF0BC4DEDEB7E1E9C09B6F /* Frameworks */ = {
@@ -430,9 +482,14 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive-resources.sh",
+				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -446,6 +503,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E06D6CF2062BFC500CA8E1F /* RQLoginModel.m in Sources */,
 				1E06D6B32062B00900CA8E1F /* RQHomeViewController.m in Sources */,
 				1E06D6C02062B20600CA8E1F /* RQBaseViewModel.m in Sources */,
 				1E06D6BD2062B03B00CA8E1F /* RQMeViewController.m in Sources */,
@@ -454,7 +512,10 @@
 				1E06D67A2062ADD300CA8E1F /* main.m in Sources */,
 				1E06D6A42062AECE00CA8E1F /* RQTabBarController.m in Sources */,
 				1E06D6B72062B02300CA8E1F /* RQCategoryViewController.m in Sources */,
+				1E06D6D32062C01500CA8E1F /* RQNetWorkManager.m in Sources */,
+				1E06D6C92062BF9200CA8E1F /* RQLoginView.m in Sources */,
 				1E06D66C2062ADD300CA8E1F /* AppDelegate.m in Sources */,
+				1E06D6CC2062BFB100CA8E1F /* RQLoginViewModel.m in Sources */,
 				1E06D6AB2062AFA600CA8E1F /* RQLoginViewController.m in Sources */,
 				1E06D6BA2062B03100CA8E1F /* RQCartViewController.m in Sources */,
 			);

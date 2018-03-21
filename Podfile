@@ -4,5 +4,11 @@
 target 'ruqiReactive' do
  
 pod 'ReactiveObjC'
+pod 'PPNetworkHelper'
+pod 'Masonry'
+pod 'YYModel'
+pod 'SDWebImage’
+pod 'IQKeyboardManager'
+pod 'SVProgressHUD'
 
 end
