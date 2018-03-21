@@ -10,4 +10,6 @@
 
 @interface RQBaseViewModel : NSObject
 
+
+
 @end
