@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) RQLoginModel *loginModel;
 
--(void)loginNetWorkingWith:(NSString *)account pas:(NSString *)pas;
+
+-(void)loginNetWorking;
 
 @end

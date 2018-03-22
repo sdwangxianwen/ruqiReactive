@@ -8,6 +8,7 @@
 
 #import "RQLoginView.h"
 #import "RQLoginViewModel.h"
+#import "RQLoginModel.h"
 
 @interface RQLoginView ()
 
@@ -15,10 +16,13 @@
 
 @implementation RQLoginView
 
-- (instancetype)initWithFrame:(CGRect)frame initWithViewModel:(RQLoginViewModel *)loginViewModel
+- (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
     if (self) {
+        
+         RQLoginViewModel *viewModel = [[RQLoginViewModel alloc] init];
+        self.viewModel = viewModel;
         [self accountTextField];
         [self pasTextField];
         [self loginBtn];
@@ -43,8 +47,8 @@
         }];
         __weak typeof(self) weakSelf = self;
         [_accountTextField.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
-            weakSelf.account = x;
-            NSLog(@"%@",x);
+            
+            self.viewModel.loginModel.account = x;
         }];
     }
     return _accountTextField;
@@ -61,9 +65,11 @@
             
             make.top.equalTo(_accountTextField.mas_bottom).offset(20);
         }];
-        __weak typeof(self) weakSelf = self;
+   
         [_pasTextField.rac_textSignal subscribeNext:^(NSString * _Nullable x) {
-            weakSelf.pas = x;
+            
+            self.viewModel.loginModel.pasword = x;
+           
         }];
     }
     return _pasTextField;
@@ -87,8 +93,7 @@
     return _loginBtn;
 }
 -(void)logbtnClick {
-    NSLog(@"%@",self.loginModel.pasword);
-    RQLoginViewModel *viewModel = [[RQLoginViewModel alloc] init];
-    [viewModel loginNetWorkingWith:self.account pas:self.pas];
+   
+    [self.viewModel loginNetWorking];
 }
 @end

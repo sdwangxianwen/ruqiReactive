@@ -9,13 +9,20 @@
 #import "RQLoginViewModel.h"
 
 @implementation RQLoginViewModel
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.loginModel = [[RQLoginModel alloc] init];
+    }
+    return self;
+}
 
-
--(void)loginNetWorkingWith:(NSString *)account pas:(NSString *)pas {
+-(void)loginNetWorking {
     NSString *urlstring = [NSString stringWithFormat:@"%@open/userCenter/login/v1",SERVER_HOST_API];
     
-    NSDictionary *dict = @{ @"phone": account?:@"",
-                            @"password":pas?:@"",
+    NSDictionary *dict = @{ @"phone": self.loginModel.account?:@"",
+                            @"password":self.loginModel.pasword ?:@"",
                             @"type1": @"",
                             @"type2": @""};
     [[RQNetWorkManager shareInstance] loginNetWorkWith:urlstring parm:dict successBlock:^(id response) {
@@ -29,6 +36,10 @@
         
     }];
     
+}
+
+-(void)setLoginModel:(RQLoginModel *)loginModel {
+    _loginModel = loginModel;
 }
 
 @end

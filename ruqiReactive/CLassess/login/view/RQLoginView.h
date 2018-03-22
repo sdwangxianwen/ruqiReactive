@@ -15,12 +15,10 @@
 @property(nonatomic,strong)UITextField *accountTextField;
 @property (nonatomic, strong) UITextField *pasTextField;
 @property (nonatomic, strong) UIButton *loginBtn;
-@property (nonatomic, strong) RQLoginViewModel *loginViewModel;
-@property (nonatomic, strong) NSString *account;
-@property (nonatomic, strong) NSString *pas;
 
-@property (nonatomic, strong) RQLoginModel *loginModel;
 
-- (instancetype)initWithFrame:(CGRect)frame initWithViewModel:(RQLoginViewModel *)loginViewModel;
+@property (nonatomic, strong) RQLoginViewModel *viewModel;
+
+
 
 @end
