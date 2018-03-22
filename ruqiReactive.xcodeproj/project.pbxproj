@@ -200,6 +200,7 @@
 		1E06D6A82062AF9000CA8E1F /* login */ = {
 			isa = PBXGroup;
 			children = (
+				1E06D6D42063350200CA8E1F /* view */,
 				1E06D6C32062BF5600CA8E1F /* ViewModel */,
 				1E06D6C22062BF5100CA8E1F /* model */,
 				1E06D6C12062BF3200CA8E1F /* Controller */,
@@ -261,8 +262,6 @@
 			children = (
 				1E06D6A92062AFA600CA8E1F /* RQLoginViewController.h */,
 				1E06D6AA2062AFA600CA8E1F /* RQLoginViewController.m */,
-				1E06D6C72062BF9200CA8E1F /* RQLoginView.h */,
-				1E06D6C82062BF9200CA8E1F /* RQLoginView.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -292,6 +291,15 @@
 				1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */,
 			);
 			path = manager;
+			sourceTree = "<group>";
+		};
+		1E06D6D42063350200CA8E1F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6C72062BF9200CA8E1F /* RQLoginView.h */,
+				1E06D6C82062BF9200CA8E1F /* RQLoginView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		A0CF0BC4DEDEB7E1E9C09B6F /* Frameworks */ = {

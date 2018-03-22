@@ -10,4 +10,7 @@
 
 @interface RQLoginModel : NSObject
 
+@property (copy,nonatomic) NSString *account;
+@property (copy,nonatomic) NSString *pasword;
+
 @end

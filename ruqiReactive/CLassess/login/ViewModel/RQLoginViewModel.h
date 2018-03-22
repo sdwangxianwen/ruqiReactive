@@ -7,9 +7,12 @@
 //
 
 #import "RQBaseViewModel.h"
+#import "RQLoginModel.h"
 
 @interface RQLoginViewModel : RQBaseViewModel
 
--(void)loginNetWorking;
+@property (nonatomic, strong) RQLoginModel *loginModel;
+
+-(void)loginNetWorkingWith:(NSString *)account pas:(NSString *)pas;
 
 @end

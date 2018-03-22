@@ -11,15 +11,18 @@
 @implementation RQLoginViewModel
 
 
--(void)loginNetWorking {
+-(void)loginNetWorkingWith:(NSString *)account pas:(NSString *)pas {
     NSString *urlstring = [NSString stringWithFormat:@"%@open/userCenter/login/v1",SERVER_HOST_API];
     
-    NSDictionary *dict = @{ @"phone": @"18618400540",
-                            @"password":@"1234567",
+    NSDictionary *dict = @{ @"phone": account?:@"",
+                            @"password":pas?:@"",
                             @"type1": @"",
                             @"type2": @""};
     [[RQNetWorkManager shareInstance] loginNetWorkWith:urlstring parm:dict successBlock:^(id response) {
         NSLog(@"%@",response);
+        if ([response[@"resultCode"] isEqualToString:@"SUC"]) {
+            [UIApplication  sharedApplication].keyWindow.rootViewController = [[RQTabBarController alloc] init];
+        };
     } failureBlock:^(id failureObject, NSString *resultCode) {
         
     } errorBlock:^(NSError *error) {
