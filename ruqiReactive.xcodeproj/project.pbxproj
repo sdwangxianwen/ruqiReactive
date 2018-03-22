@@ -26,6 +26,8 @@
 		1E06D6CC2062BFB100CA8E1F /* RQLoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6CB2062BFB100CA8E1F /* RQLoginViewModel.m */; };
 		1E06D6CF2062BFC500CA8E1F /* RQLoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6CE2062BFC500CA8E1F /* RQLoginModel.m */; };
 		1E06D6D32062C01500CA8E1F /* RQNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */; };
+		1E06D6D92063CD2F00CA8E1F /* NSArray+HJImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */; };
+		1E06D6DB2063CD4D00CA8E1F /* login_bg_gif_01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E06D6DA2063CD4D00CA8E1F /* login_bg_gif_01.gif */; };
 		F02D8B9ED34BAF36A33152C8 /* libPods-ruqiReactive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */; };
 /* End PBXBuildFile section */
 
@@ -87,6 +89,9 @@
 		1E06D6CE2062BFC500CA8E1F /* RQLoginModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQLoginModel.m; sourceTree = "<group>"; };
 		1E06D6D12062C01500CA8E1F /* RQNetWorkManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQNetWorkManager.h; sourceTree = "<group>"; };
 		1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQNetWorkManager.m; sourceTree = "<group>"; };
+		1E06D6D72063CD2F00CA8E1F /* NSArray+HJImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HJImages.h"; sourceTree = "<group>"; };
+		1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HJImages.m"; sourceTree = "<group>"; };
+		1E06D6DA2063CD4D00CA8E1F /* login_bg_gif_01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = login_bg_gif_01.gif; sourceTree = "<group>"; };
 		1FE1E6E9A2EB356D82941108 /* Pods-ruqiReactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.debug.xcconfig"; sourceTree = "<group>"; };
 		399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ruqiReactive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		430C30C0C0EAC8789A1C9725 /* Pods-ruqiReactive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.release.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.release.xcconfig"; sourceTree = "<group>"; };
@@ -211,6 +216,7 @@
 		1E06D6AC2062AFB400CA8E1F /* CLassess */ = {
 			isa = PBXGroup;
 			children = (
+				1E06D6D62063CD1000CA8E1F /* category */,
 				1E06D6D02062BFF800CA8E1F /* manager */,
 				1E06D6B02062AFF300CA8E1F /* me */,
 				1E06D6AF2062AFDA00CA8E1F /* Cart */,
@@ -296,10 +302,20 @@
 		1E06D6D42063350200CA8E1F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				1E06D6DA2063CD4D00CA8E1F /* login_bg_gif_01.gif */,
 				1E06D6C72062BF9200CA8E1F /* RQLoginView.h */,
 				1E06D6C82062BF9200CA8E1F /* RQLoginView.m */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		1E06D6D62063CD1000CA8E1F /* category */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6D72063CD2F00CA8E1F /* NSArray+HJImages.h */,
+				1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */,
+			);
+			path = category;
 			sourceTree = "<group>";
 		};
 		A0CF0BC4DEDEB7E1E9C09B6F /* Frameworks */ = {
@@ -431,6 +447,7 @@
 			files = (
 				1E06D6772062ADD300CA8E1F /* LaunchScreen.storyboard in Resources */,
 				1E06D6742062ADD300CA8E1F /* Assets.xcassets in Resources */,
+				1E06D6DB2063CD4D00CA8E1F /* login_bg_gif_01.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E06D6D92063CD2F00CA8E1F /* NSArray+HJImages.m in Sources */,
 				1E06D6CF2062BFC500CA8E1F /* RQLoginModel.m in Sources */,
 				1E06D6B32062B00900CA8E1F /* RQHomeViewController.m in Sources */,
 				1E06D6C02062B20600CA8E1F /* RQBaseViewModel.m in Sources */,
