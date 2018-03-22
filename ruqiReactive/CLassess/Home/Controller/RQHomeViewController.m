@@ -7,6 +7,7 @@
 //
 
 #import "RQHomeViewController.h"
+#import "RQHomeView.h"
 
 @interface RQHomeViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   
+    RQHomeView *homeView = [[RQHomeView alloc] initWithFrame:self.view.bounds homeVc:self];
+    [self.view addSubview:homeView];
     
 }
 

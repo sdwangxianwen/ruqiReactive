@@ -28,6 +28,11 @@
 		1E06D6D32062C01500CA8E1F /* RQNetWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6D22062C01500CA8E1F /* RQNetWorkManager.m */; };
 		1E06D6D92063CD2F00CA8E1F /* NSArray+HJImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */; };
 		1E06D6DB2063CD4D00CA8E1F /* login_bg_gif_01.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1E06D6DA2063CD4D00CA8E1F /* login_bg_gif_01.gif */; };
+		1E06D6E22063D02600CA8E1F /* RQHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6E12063D02600CA8E1F /* RQHomeView.m */; };
+		1E06D6E52063D15500CA8E1F /* RQHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6E42063D15500CA8E1F /* RQHomeViewModel.m */; };
+		1E06D6E82063D6FC00CA8E1F /* RQHpCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6E72063D6FC00CA8E1F /* RQHpCategory.m */; };
+		1E06D6EB2063D71400CA8E1F /* RQHpCategoryActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6EA2063D71400CA8E1F /* RQHpCategoryActivity.m */; };
+		1E06D6EE2063D83E00CA8E1F /* RQCategoryCompleteList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E06D6ED2063D83E00CA8E1F /* RQCategoryCompleteList.m */; };
 		F02D8B9ED34BAF36A33152C8 /* libPods-ruqiReactive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +97,16 @@
 		1E06D6D72063CD2F00CA8E1F /* NSArray+HJImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HJImages.h"; sourceTree = "<group>"; };
 		1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HJImages.m"; sourceTree = "<group>"; };
 		1E06D6DA2063CD4D00CA8E1F /* login_bg_gif_01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = login_bg_gif_01.gif; sourceTree = "<group>"; };
+		1E06D6E02063D02600CA8E1F /* RQHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQHomeView.h; sourceTree = "<group>"; };
+		1E06D6E12063D02600CA8E1F /* RQHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQHomeView.m; sourceTree = "<group>"; };
+		1E06D6E32063D15500CA8E1F /* RQHomeViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQHomeViewModel.h; sourceTree = "<group>"; };
+		1E06D6E42063D15500CA8E1F /* RQHomeViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQHomeViewModel.m; sourceTree = "<group>"; };
+		1E06D6E62063D6FC00CA8E1F /* RQHpCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQHpCategory.h; sourceTree = "<group>"; };
+		1E06D6E72063D6FC00CA8E1F /* RQHpCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQHpCategory.m; sourceTree = "<group>"; };
+		1E06D6E92063D71400CA8E1F /* RQHpCategoryActivity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQHpCategoryActivity.h; sourceTree = "<group>"; };
+		1E06D6EA2063D71400CA8E1F /* RQHpCategoryActivity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQHpCategoryActivity.m; sourceTree = "<group>"; };
+		1E06D6EC2063D83E00CA8E1F /* RQCategoryCompleteList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RQCategoryCompleteList.h; sourceTree = "<group>"; };
+		1E06D6ED2063D83E00CA8E1F /* RQCategoryCompleteList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RQCategoryCompleteList.m; sourceTree = "<group>"; };
 		1FE1E6E9A2EB356D82941108 /* Pods-ruqiReactive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.debug.xcconfig"; sourceTree = "<group>"; };
 		399B9A97100BBD5F41A80A8F /* libPods-ruqiReactive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ruqiReactive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		430C30C0C0EAC8789A1C9725 /* Pods-ruqiReactive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ruqiReactive.release.xcconfig"; path = "Pods/Target Support Files/Pods-ruqiReactive/Pods-ruqiReactive.release.xcconfig"; sourceTree = "<group>"; };
@@ -230,8 +245,10 @@
 		1E06D6AD2062AFC000CA8E1F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1E06D6B12062B00900CA8E1F /* RQHomeViewController.h */,
-				1E06D6B22062B00900CA8E1F /* RQHomeViewController.m */,
+				1E06D6DF2063D00A00CA8E1F /* ViewModel */,
+				1E06D6DE2063D00400CA8E1F /* Model */,
+				1E06D6DD2063CFFD00CA8E1F /* View */,
+				1E06D6DC2063CFF100CA8E1F /* Controller */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -316,6 +333,46 @@
 				1E06D6D82063CD2F00CA8E1F /* NSArray+HJImages.m */,
 			);
 			path = category;
+			sourceTree = "<group>";
+		};
+		1E06D6DC2063CFF100CA8E1F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6B12062B00900CA8E1F /* RQHomeViewController.h */,
+				1E06D6B22062B00900CA8E1F /* RQHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1E06D6DD2063CFFD00CA8E1F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6E02063D02600CA8E1F /* RQHomeView.h */,
+				1E06D6E12063D02600CA8E1F /* RQHomeView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1E06D6DE2063D00400CA8E1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6E62063D6FC00CA8E1F /* RQHpCategory.h */,
+				1E06D6E72063D6FC00CA8E1F /* RQHpCategory.m */,
+				1E06D6E92063D71400CA8E1F /* RQHpCategoryActivity.h */,
+				1E06D6EA2063D71400CA8E1F /* RQHpCategoryActivity.m */,
+				1E06D6EC2063D83E00CA8E1F /* RQCategoryCompleteList.h */,
+				1E06D6ED2063D83E00CA8E1F /* RQCategoryCompleteList.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1E06D6DF2063D00A00CA8E1F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1E06D6E32063D15500CA8E1F /* RQHomeViewModel.h */,
+				1E06D6E42063D15500CA8E1F /* RQHomeViewModel.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		A0CF0BC4DEDEB7E1E9C09B6F /* Frameworks */ = {
@@ -531,15 +588,20 @@
 				1E06D6D92063CD2F00CA8E1F /* NSArray+HJImages.m in Sources */,
 				1E06D6CF2062BFC500CA8E1F /* RQLoginModel.m in Sources */,
 				1E06D6B32062B00900CA8E1F /* RQHomeViewController.m in Sources */,
+				1E06D6EE2063D83E00CA8E1F /* RQCategoryCompleteList.m in Sources */,
 				1E06D6C02062B20600CA8E1F /* RQBaseViewModel.m in Sources */,
+				1E06D6E52063D15500CA8E1F /* RQHomeViewModel.m in Sources */,
 				1E06D6BD2062B03B00CA8E1F /* RQMeViewController.m in Sources */,
 				1E06D6A12062AEB500CA8E1F /* RQNavController.m in Sources */,
 				1E06D6A72062AEE800CA8E1F /* RQBaseViewController.m in Sources */,
 				1E06D67A2062ADD300CA8E1F /* main.m in Sources */,
 				1E06D6A42062AECE00CA8E1F /* RQTabBarController.m in Sources */,
 				1E06D6B72062B02300CA8E1F /* RQCategoryViewController.m in Sources */,
+				1E06D6E82063D6FC00CA8E1F /* RQHpCategory.m in Sources */,
+				1E06D6E22063D02600CA8E1F /* RQHomeView.m in Sources */,
 				1E06D6D32062C01500CA8E1F /* RQNetWorkManager.m in Sources */,
 				1E06D6C92062BF9200CA8E1F /* RQLoginView.m in Sources */,
+				1E06D6EB2063D71400CA8E1F /* RQHpCategoryActivity.m in Sources */,
 				1E06D66C2062ADD300CA8E1F /* AppDelegate.m in Sources */,
 				1E06D6CC2062BFB100CA8E1F /* RQLoginViewModel.m in Sources */,
 				1E06D6AB2062AFA600CA8E1F /* RQLoginViewController.m in Sources */,

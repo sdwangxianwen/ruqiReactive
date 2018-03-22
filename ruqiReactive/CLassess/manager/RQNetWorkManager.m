@@ -26,6 +26,10 @@
     [self postRequesNoCachetWithUrl:urlstring dict:parm successBlock:successBlock failureBlock:failureBlock errorBlock:errorBlock];
 }
 
+-(void)homeNetworkWith:(NSString *)urlstring parm:(NSDictionary *)parm successBlock:(successBlock)successBlock failureBlock:(failureBlock)failureBlock errorBlock:(errorBlock)errorBlock {
+    [self postRequesNoCachetWithUrl:urlstring dict:parm successBlock:successBlock failureBlock:failureBlock errorBlock:errorBlock];
+}
+
 
 -(void)postRequesNoCachetWithUrl:(NSString *)url dict:(NSDictionary *)dict successBlock:(successBlock)successBlock failureBlock:(failureBlock)failureBlock errorBlock:(errorBlock)errorBlock {
     

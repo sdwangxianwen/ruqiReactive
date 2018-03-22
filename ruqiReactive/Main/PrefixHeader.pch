@@ -18,6 +18,7 @@
 #import <ReactiveObjC.h>
 #import <Masonry.h>
 #import <SVProgressHUD.h>
+#import <YYModel.h>
 
 
 

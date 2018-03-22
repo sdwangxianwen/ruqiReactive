@@ -16,6 +16,10 @@ typedef void(^errorBlock)(NSError *error);
 
 + (instancetype) shareInstance;
 
+//登录
 -(void)loginNetWorkWith:(NSString *)urlstring parm:(NSDictionary *)parm successBlock:(successBlock)successBlock failureBlock:(failureBlock)failureBlock errorBlock:(errorBlock)errorBlock;
+
+//获取首页内容
+-(void)homeNetworkWith:(NSString *)urlstring parm:(NSDictionary *)parm successBlock:(successBlock)successBlock failureBlock:(failureBlock)failureBlock errorBlock:(errorBlock)errorBlock;
 
 @end
