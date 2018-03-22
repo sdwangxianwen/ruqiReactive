@@ -26,9 +26,18 @@
     [self setupUi];
 }
 
+
+
+
+
+
 -(void)setupUi {
-    RQLoginView *loginView = [[RQLoginView alloc] initWithFrame:self.view.bounds];
+    RQLoginView *loginView = [[RQLoginView alloc] init];
+    
     [self.view addSubview:loginView];
+    [loginView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 
 }
 

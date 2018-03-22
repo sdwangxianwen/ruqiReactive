@@ -38,6 +38,9 @@
         _homeTableView.delegate = self;
         _homeTableView.dataSource = self;
         [self addSubview:_homeTableView];
+        [_homeTableView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self);
+        }];
     }
     return _homeTableView;
 }

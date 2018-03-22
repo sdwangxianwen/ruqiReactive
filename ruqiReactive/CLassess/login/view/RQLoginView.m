@@ -36,10 +36,13 @@
 
 -(UIImageView *)backImage {
     if (!_backImage) {
-        _backImage = [[UIImageView alloc] initWithFrame:self.bounds];
+        _backImage = [[UIImageView alloc] init];
         [self addSubview:_backImage];
         _backImage.animationImages = [NSArray hj_imagesWithLocalGif:@"login_bg_gif_01" expectSize:self.bounds.size];
         [_backImage startAnimating];
+        [_backImage mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(self);
+        }];
     }
     return _backImage;
 }

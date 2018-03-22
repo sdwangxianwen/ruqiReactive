@@ -10,7 +10,7 @@
 
 @interface RQHomeViewModel : RQBaseViewModel
 
-@property (nonatomic, strong) RACSignal *dataArr;
+
 
 //-(void)homeNetwork;
 -(RACSignal *)signalForGetHomeDataArr;

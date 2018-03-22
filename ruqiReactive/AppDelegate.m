@@ -20,6 +20,7 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[RQLoginViewController alloc] init];
+//    self.window.rootViewController.butt
     [self.window makeKeyAndVisible];
     
     return YES;

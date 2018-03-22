@@ -18,8 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RQHomeView *homeView = [[RQHomeView alloc] initWithFrame:self.view.bounds homeVc:self];
+    RQHomeView *homeView = [[RQHomeView alloc] initWithFrame:CGRectZero homeVc:self];
+    
     [self.view addSubview:homeView];
+    [homeView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
     
 }
 
